@@ -24,7 +24,7 @@ class Auto {
 				y += 1;
 			}
 		}
-		if ((y == this.asientos.length) && (this.registro == this.motor.registro) && (this.registro == x)) {
+		if ((y == this.asientos.length) && (this.registro == this.motor.registro)) {
 			return "Auto original";
 			}
 		else {
