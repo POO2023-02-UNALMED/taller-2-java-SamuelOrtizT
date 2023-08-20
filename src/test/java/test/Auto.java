@@ -1,6 +1,4 @@
 package test;
-
-package test;
 class Auto {
 	String modelo;
 	int precio;
@@ -9,10 +7,10 @@ class Auto {
 	Motor motor;
 	int registro;
 	static int cantidadCreados;
-	int cantidadAsientos(){
+	int cantidadAsientos () {
 
 	}
-	String verificarIntegridad(){
-		
+	String verificarIntegridad () {
+
 	}
 }
