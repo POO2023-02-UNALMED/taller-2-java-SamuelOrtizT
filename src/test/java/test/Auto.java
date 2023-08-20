@@ -20,7 +20,7 @@ class Auto {
 		int x = this.asientos[0].registro;
 		int y = 0;
 		for (Asiento asiento : this.asientos) {
-			if (x == asiento.registro) {
+			if ((asiento != null) && (x == asiento.registro)) {
 				y += 1;
 			}
 		}
