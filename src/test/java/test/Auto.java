@@ -7,8 +7,14 @@ class Auto {
 	Motor motor;
 	int registro;
 	static int cantidadCreados;
-	int cantidadAsientos () {
-		return this.asientos.length;
+	int cantidadAsientos() {
+		int contador = 0;
+		for (Asiento asiento : this.asientos) {
+			if (asiento != null) {
+				contador += 1;
+			}
+		}
+		return contador;
 	}
 	String verificarIntegridad () {
 		int x = this.asientos[0].registro;
