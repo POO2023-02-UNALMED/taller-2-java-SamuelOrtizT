@@ -17,31 +17,25 @@ class Auto {
 		return contador;
 	}
 	String verificarIntegridad () {
+		int x = 0; 
 		int z = 0;
-		int x = 0;
 		for (Asiento asiento : this.asientos) {
-			if (asiento.registro != 0) {
-				x = asiento.registro;
-				break;
-			}
-		}
-		for (Asiento asiento : this.asientos) {
-			if (asiento.registro != 0) {
+			if (asiento != null && asiento.registro != 0) {
+				x = asiento.registro; 
 				z += 1;
 			}
 		}
 		int y = 0;
 		for (Asiento asiento : this.asientos) {
-			if (x == asiento.registro) {
+			if (asiento != null && x == asiento.registro) {
 				y += 1;
 			}
 		}
+		
 		if ((y == z) && (this.registro == this.motor.registro) && (x == this.registro)) {
 			return "Auto original";
-			}
-		else {
+		} else {
 			return "Las piezas no son originales";
-			}
-		
-	}
+		}
+	}	
 }
