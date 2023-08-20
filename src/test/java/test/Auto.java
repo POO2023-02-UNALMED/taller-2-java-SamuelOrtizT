@@ -2,13 +2,13 @@ package test;
 class Auto {
 	String modelo;
 	int precio;
-	Array[Asiento] asientos;
+	Asiento[] asientos;
 	String marca;
 	Motor motor;
 	int registro;
 	static int cantidadCreados;
 	int cantidadAsientos () {
-		return length(this.asientos);
+		return this.asientos.length;
 	}
 	String verificarIntegridad () {
 		int x = this.asientos[0].registro;
@@ -18,7 +18,7 @@ class Auto {
 				y += 1;
 			}
 		}
-		if ((y == length(this.asientos)) and (this.registro == this.motor.registro == x)) {
+		if ((y == length(this.asientos)) && (this.registro == this.motor.registro == x)) {
 			return "Auto original";
 			}
 		else {
