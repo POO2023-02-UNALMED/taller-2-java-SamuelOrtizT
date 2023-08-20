@@ -18,6 +18,7 @@ class Auto {
 	}
 	String verificarIntegridad () {
 		int z = 0;
+		int x = 0;
 		for (Asiento asiento : this.asientos) {
 			if (asiento.registro != 0) {
 				int x = asiento.registro;
