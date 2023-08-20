@@ -8,14 +8,14 @@ class Auto {
 	int registro;
 	static int cantidadCreados;
 	int cantidadAsientos () {
-		return length(this.asientos)
+		return length(this.asientos);
 	}
 	String verificarIntegridad () {
 		if () {
-			return "Auto original"
+			return "Auto original";
 		}
 		else {
-			return "Las piezas no son originales"
+			return "Las piezas no son originales";
 		}
 	}
 }
