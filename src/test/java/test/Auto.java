@@ -18,7 +18,7 @@ class Auto {
 				y += 1;
 			}
 		}
-		if ((y == length(this.asientos)) && (this.registro == this.motor.registro) && (this.registro == x)) {
+		if ((y == this.asientos.length) && (this.registro == this.motor.registro) && (this.registro == x)) {
 			return "Auto original";
 			}
 		else {
