@@ -21,7 +21,7 @@ class Auto {
 		int x = 0;
 		for (Asiento asiento : this.asientos) {
 			if (asiento.registro != 0) {
-				int x = asiento.registro;
+				x = asiento.registro;
 				break;
 			}
 		}
