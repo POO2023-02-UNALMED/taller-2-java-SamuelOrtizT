@@ -13,12 +13,12 @@ class Auto {
 	String verificarIntegridad () {
 		int x = this.asientos[0].registro;
 		int y = 0;
-		for (asiento in this.asientos) {
+		for (Asiento asiento : this.asientos) {
 			if (x == asiento.registro) {
 				y += 1;
 			}
 		}
-		if ((y == length(this.asientos)) && (this.registro == this.motor.registro == x)) {
+		if ((y == length(this.asientos)) && (this.registro == this.motor.registro) && (this.registro == x)) {
 			return "Auto original";
 			}
 		else {
