@@ -11,11 +11,19 @@ class Auto {
 		return length(this.asientos);
 	}
 	String verificarIntegridad () {
-		if () {
-			return "Auto original";
+		int x = this.asientos[0].registro;
+		int y = 0;
+		for (asiento in this.asientos) {
+			if (x == asiento.registro) {
+				y += 1;
+			}
 		}
+		if ((y == length(this.asientos)) and (this.registro == this.motor.registro == x)) {
+			return "Auto original";
+			}
 		else {
 			return "Las piezas no son originales";
-		}
+			}
+		
 	}
 }
